@@ -4,15 +4,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-  integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
   <title>Coffee Tracker</title>
 </head>
 <body>
   <nav class="nav-container">
     <div class="nav-left">
-      <h3 class="logo">coffee tracker</h3>
+      <p class="logo">coffee tracker</p>
     </div>
     <div class="nav-right">
       <button class="signin-btn">Sign In / Sign Up</button>
@@ -41,8 +39,23 @@
       </form>
     </header>
 
-    <div id="container" class="my-coffees-container">
-      <!-- <h2 class="coffee-title">My coffees</h2> -->
+    <div id="coffeeContainer" class="coffees-container">
+      <h2>My coffees</h2>
+
+      <div class="coffee-card">
+        <p id="roaster-name">Roaster</p>
+        <h2 id="coffee-name">Coffee name</h3>
+        <div class="details-container">
+          <div class="region-container">
+            <div class="label">Region</div>
+            <h3>Kenya</h3>
+          </div>
+          <div class="process-container">
+            <div class="label">Process</div>
+            <h3>Washed</h3>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
 </body>

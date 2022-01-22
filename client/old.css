@@ -9,19 +9,16 @@
 :root {
   /* Color styles */
   --primary: #a24a27;
-  --secondary: #bc8661;
   --ui-01: #eeeef0;
   --ui-02: #fff;
   --ui-03: #161616;
-  --ui-04: #292929;
-  --text-01: #020202;
+  --text-01: #161616;
   --text-02: #a8a8a8;
   --text-03: #fff;
-  --text-04: #666666;
   /* Type styles */
   --heading-01: 3rem;
   --heading-02: 2rem;
-  --heading-03: 1.25rem;
+  --heading-01: 1.25rem;
   --paragraph: 1rem;
   --label: 0.8rem;
   /* Padding: increments of 8px */
@@ -48,7 +45,7 @@ body {
 .logo {
   font-weight: 600;
   color: var(--text-03);
-  font-size: var(--heading-03);
+  font-size: var(--heading-01);
 }
 
 .signin-btn {
@@ -115,90 +112,4 @@ body {
 .form-btn:hover {
   cursor: pointer;
   background-color: var(--primary);
-}
-
-/* My coffees */
-.my-coffees-container {
-  background-color: var(--ui-03);
-  padding: var(--pad-64);
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.coffee-title {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: var(--text-02);
-  font-size: var(--label);
-  margin-bottom: var(--pad-32);
-}
-
-/* Card */
-.card-container {
-  background-color: var(--ui-04);
-  width: 30vw;
-  border-radius: 8px;
-  color: var(--text-03);
-  margin: var(--pad-8);
-}
-
-.content-container {
-  padding: var(--pad-32);
-}
-
-.name {
-  letter-spacing: 1.5px;
-  font-weight: 300;
-  padding-bottom: var(--pad-16);
-}
-
-.roaster {
-  padding-bottom: var(--pad-8);
-  color: var(--secondary);
-}
-
-.name.coffee {
-  font-weight: 300;
-  font-size: 2.2rem;
-  padding-bottom: var(--pad-16);
-}
-
-.label {
-  color: var(--text-04);
-  font-size: var(--label);
-  font-weight: 600;
-  letter-spacing: 1.5px;
-  padding-bottom: 4px;
-}
-
-.actions-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--secondary);
-}
-
-.card-btn {
-  width: 40%;
-  background-color: #242424;
-  border: none;
-  padding: var(--pad-16);
-  color: var(--text-04);
-  font-size: var(--label);
-  font-weight: 600;
-  letter-spacing: 1.5px;
-}
-.card-btn:hover {
-  background-color: var(--ui-03);
-  cursor: pointer;
-}
-
-.score-container {
-  display: flex;
-  justify-content: center;
-  width: 60%;
-}
-
-.score-container i {
-  padding: 4px;
 }
