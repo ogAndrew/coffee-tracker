@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Coffee Tracker</title>
+</head>
+<body>
+  <nav class="nav-container">
+    <div class="nav-left">
+      <p class="logo">coffee tracker</p>
+    </div>
+    <div class="nav-right">
+      <button class="signin-btn">Sign In / Sign Up</button>
+    </div>
+  </nav>
+
+  <main>
+    <header class="header">
+      <div class="title-container">
+        <h1>Add a coffee & refine your palette</h1>
+      </div>
+      <form id="form" class="form-container">
+        <input type="text" id="inputCoffee" class="form-input" placeholder="Coffee name">
+        <input type="text" id="inputRoaster" class="form-input" placeholder="Roaster">
+        <input type="text" id="inputRegion" class="form-input" placeholder="Region">
+        <input type="text" id="inputProcess" class="form-input" placeholder="Process">
+        <select name="inputScore" id="inputScore" class="form-input dropdown">
+          <option value="default">Score</option>
+          <option value="5">5: Favorite coffee ever!</option>
+          <option value="4">4: I'd buy it again</option>
+          <option value="3">3: Indifferent about this one</option>
+          <option value="2">2: Wouldn't buy it again</option>
+          <option value="1">1: Bummed I spent my money on this</option>
+        </select>
+        <input type="submit" value="Add coffee" class="form-btn">
+      </form>
+    </header>
+
+    <div class="coffees-container">
+      <h2>My coffees</h2>
+
+      <div class="coffee-card">
+        <p id="roaster-name">Roaster</p>
+        <h2 id="coffee-name">Coffee name</h3>
+        <div class="details-container">
+          <div class="region-container">
+            <div class="label">Region</div>
+            <h3>Kenya</h3>
+          </div>
+          <div class="process-container">
+            <div class="label">Process</div>
+            <h3>Washed</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+<script type="module" src="./async.js"></script>
+<script type="module" src="./main.js"></script>
+</html>

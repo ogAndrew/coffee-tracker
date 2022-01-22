@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Color styles */
+  --primary: #a24a27;
+  --ui-01: #eeeef0;
+  --ui-02: #fff;
+  --ui-03: #161616;
+  --text-01: #161616;
+  --text-02: #a8a8a8;
+  --text-03: #fff;
+  /* Type styles */
+  --heading-01: 3rem;
+  --heading-02: 2rem;
+  --heading-01: 1.25rem;
+  --paragraph: 1rem;
+  --label: 0.8rem;
+  /* Padding: increments of 8px */
+  --pad-8: 0.5rem;
+  --pad-16: 1rem;
+  --pad-32: 2rem;
+  --pad-64: 3rem;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+/* Nav Bar */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--pad-64);
+  height: 5rem;
+  background-color: var(--ui-03);
+}
+
+.logo {
+  font-weight: 600;
+  color: var(--text-03);
+  font-size: var(--heading-01);
+}
+
+.signin-btn {
+  background-color: var(--ui-02);
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+  font-size: var(--label);
+  border-radius: 100px;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 600;
+  border: none;
+}
+.signin-btn:hover {
+  cursor: pointer;
+  background-color: var(--primary);
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--ui-03);
+  padding: var(--pad-64);
+}
+
+.title-container h1 {
+  width: 40vw;
+  color: var(--text-03);
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+/* Form */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  background-color: var(--ui-02);
+  padding: var(--pad-32) var(--pad-64);
+  border-radius: 2px;
+}
+
+.form-input {
+  border: none;
+  border-bottom: 1px solid var(--ui-03);
+  padding: var(--pad-16) var(--pad-8);
+  margin: var(--pad-8) 0;
+  font-size: var(--paragraph);
+  color: var(--text-01);
+  font-family: "Red Hat Display", sans-serif;
+  outline-color: var(--primary);
+}
+
+.form-btn {
+  background-color: var(--ui-03);
+  padding: var(--pad-16);
+  margin: var(--pad-16) 0;
+  color: var(--text-03);
+  font-family: "Red Hat Display", sans-serif;
+  font-size: var(--paragraph);
+  letter-spacing: 0.5px;
+  border: none;
+}
+.form-btn:hover {
+  cursor: pointer;
+  background-color: var(--primary);
+}
